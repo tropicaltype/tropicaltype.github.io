@@ -1,0 +1,92 @@
+/* CSS Reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, strong, img, ul, li, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* General */
+html {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+body {
+	font-family: 'Literata', serif;
+	color: #ffffff;
+	background-color: #FE7450;
+	margin: auto;
+  width: 840px;
+}
+.header {
+  padding-top: 40px;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+.logo {
+	fill:#FFFFFF;
+}
+.content {
+	padding-top: 40px;
+	font-size: 2.5em;
+	font-weight: 400;
+	line-height: 1.2em;
+	text-align: left;
+}
+.information {
+	padding-top: 40px;
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 1.5em;
+	text-align: left;
+}
+.footer {
+  padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1.2em;
+	text-align: center;
+}
+a, a:focus, a:visited, a:active {
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	color: #000000;
+  box-shadow: 0 2px 0 0px #ffffff;
+}
+a:hover {
+  box-shadow: 0 6px 0 0px #000000;
+	transition: all .5s ease;
+}
+.header a, a:focus, a:visited, a:active .logo {
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	fill: #FFFFFF;
+  box-shadow: none;
+}
+.header a:hover .logo {
+	fill: #000000;
+	transition: all 1s ease;
+}
+
+/* Responsive */
+@media (max-width: 840px) {
+	body {
+		width: 90%;
+	  padding: 20px;
+	}
+	.content {
+		font-size: 2.1em;
+	}
+}
